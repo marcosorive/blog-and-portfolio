@@ -3,7 +3,7 @@ import './Button.css'
 
 export function Button(props){
     return(
-        <a>
+        <a href={props.to} rel="noopener noreferrer" target="_blank" >
             <button className="button">
                 {props.children}
             </button>

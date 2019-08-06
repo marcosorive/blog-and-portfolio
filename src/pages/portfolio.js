@@ -14,7 +14,7 @@ export default class portfolio extends React.Component{
 					<a href="http://switchcalendar.com" rel="noopener noreferrer" target="_blank"></a>
 					<p ><br/>Web app to keep track the Nintendo Switch games releases.<br/>
 						Stack: Python, Django, MySQL and MDBootstrap.</p>
-					<Button><a href="http://switchcalendar.com" rel="noopener noreferrer" target="_blank" >Demo</a></Button>
+					<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
 				</Card>
 
 				<Card>
@@ -22,7 +22,7 @@ export default class portfolio extends React.Component{
 					<a href="https://marcosorive.github.io/torky/" rel="noopener noreferrer" target="_blank"></a>
 					<p ><br/>Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.<br/>
 						Stack: Python, Flask, ReactJS, Bootstrap.</p>
-					<a href="https://marcosorive.github.io/torky/" rel="noopener noreferrer" target="_blank" >Visit</a>
+					<Button to="https://marcosorive.github.io/torky/">Demo</Button>
 				</Card>
 
 				<Card>
@@ -30,7 +30,7 @@ export default class portfolio extends React.Component{
 					<a href="https://marcosorive.github.io/anothertacoplease/" rel="noopener noreferrer" target="_blank"></a>
 					<p><br/>Frontend project for tacofancy-api, displays random taco recipes.<br/>
 						Stack: ReactJS and MDBootstrap.</p>
-					<a href="https://marcosorive.github.io/anothertacoplease/" rel="noopener noreferrer" target="_blank" >Visit</a>
+					<Button to="https://marcosorive.github.io/anothertacoplease/">Demo</Button>
 				</Card>
 
 				<Card >
@@ -38,7 +38,7 @@ export default class portfolio extends React.Component{
 					<a href="https://marcosorive.github.io/apod-react/" rel="noopener noreferrer" target="_blank"></a>
 					<p ><br/>React project that displays NASA's Astronomic picture of the day<br/>
 						Stack: ReactJS and Bootstrap.</p>
-					<a href="https://marcosorive.github.io/apod-react/" rel="noopener noreferrer" target="_blank" >Visit</a>
+					<Button to="https://marcosorive.github.io/apod-react/">Demo</Button>
 				</Card>
 				</div>
 			</Layout>
