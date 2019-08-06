@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import {Card} from '../components/Card/Card'
+import {Card} from '../components/Card/Card';
+import {Button} from '../components/Button/Button';
 import './css/portfolio.css'
 export default class portfolio extends React.Component{
 
@@ -13,7 +14,7 @@ export default class portfolio extends React.Component{
 					<a href="http://switchcalendar.com" rel="noopener noreferrer" target="_blank"></a>
 					<p ><br/>Web app to keep track the Nintendo Switch games releases.<br/>
 						Stack: Python, Django, MySQL and MDBootstrap.</p>
-					<a href="http://switchcalendar.com" rel="noopener noreferrer" target="_blank" >Visit</a>
+					<Button><a href="http://switchcalendar.com" rel="noopener noreferrer" target="_blank" >Demo</a></Button>
 				</Card>
 
 				<Card>
