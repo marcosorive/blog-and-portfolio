@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/seo'
-
+import './css/blog-post.css'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -13,32 +13,10 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: "1em",
-            marginTop: "-1em",
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
+        <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: "1em",
-          }}
-        />
-
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <hr/>
+        <ul>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">

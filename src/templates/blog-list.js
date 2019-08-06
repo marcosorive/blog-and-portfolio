@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import SEO from '../components/seo'
 import Layout from '../components/Layout/Layout'
-
+import './css/blog-list.css'
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -16,46 +15,32 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title="Blog">
-        <SEO
-          title={siteTitle}
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3  style={{marginBottom: "0.5em"}}  >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <div className="post-list-container">
+			<div className="post-list-column">
+				{posts.map(({ node }) => {
+					const title = node.frontmatter.title || node.fields.slug
+					return (              
+						<div key={node.fields.slug}>
+						<h3>
+							<Link to={node.fields.slug}>
+							{title}
+							</Link>
+						</h3>
+						<p>{node.frontmatter.date}</p>
+						<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+						</div>              
+					)
+				})}
+		  </div>
+        </div>
+        <ul>
           {!isFirst && (
             <Link to={`/blog/${prevPage}`} rel="prev">
               ← Previous Page
             </Link>
           )}
           {Array.from({ length: numPages }, (_, i) => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-              }}
-            >
+            <li key={`pagination-number${i + 1}`}>
               <Link
                 to={`/blog/${i === 0 ? '' : i + 1}`}
                 style={{

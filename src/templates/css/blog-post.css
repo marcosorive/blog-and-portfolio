@@ -1,0 +1,16 @@
+p{
+    display: block;
+    margin-bottom: 1em;
+    margin-top: -1em;
+}
+hr{
+    margin-bottom: 1em;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
