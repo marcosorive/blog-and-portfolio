@@ -1,20 +1,21 @@
 button{
-    background-color: #4285F4;
+    background-color: rgb(68, 129, 216);
     font-size: 1.2em;
     padding-top: .8em;
     padding-bottom:.8em;
-    padding-left:2em;
-    padding-right: 2em;
+    padding-left:1.5em;
+    padding-right: 1.5em;
     color:white;
     border:none;
+    transition: 0.5s;
+    cursor: pointer;
 }
 button > a{
     color:white;
     text-decoration: none;
 }
 button:hover{
-    background-color: rgb(68, 129, 216)
-}
-button:active{
-    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #4285F4;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
 }

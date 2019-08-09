@@ -1,47 +1,93 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import {Card} from '../components/Card/Card';
+import {Card,CardHeader,CardBody,CardFooter} from '../components/Card/Card';
 import {Button} from '../components/Button/Button';
 import './css/portfolio.css'
-export default class portfolio extends React.Component{
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
+export default class portfolio extends React.Component{
     render(){
         return(
 			<Layout title="Portfolio">
+				<h1 className="text-center">Personal projects</h1>
 				<div className="card-layout">
-				<Card>
-					<h3 >Switch calendar</h3>
-					<a href="http://switchcalendar.com" rel="noopener noreferrer" target="_blank"></a>
-					<p ><br/>Web app to keep track the Nintendo Switch games releases.<br/>
-						Stack: Python, Django, MySQL and MDBootstrap.</p>
-					<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
-				</Card>
-
-				<Card>
-					<h3 >Torky</h3>
-					<a href="https://marcosorive.github.io/torky/" rel="noopener noreferrer" target="_blank"></a>
-					<p ><br/>Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.<br/>
-						Stack: Python, Flask, ReactJS, Bootstrap.</p>
-					<Button to="https://marcosorive.github.io/torky/">Demo</Button>
-				</Card>
-
-				<Card>
-					<h3 >Another taco, please!</h3>
-					<a href="https://marcosorive.github.io/anothertacoplease/" rel="noopener noreferrer" target="_blank"></a>
-					<p><br/>Frontend project for tacofancy-api, displays random taco recipes.<br/>
-						Stack: ReactJS and MDBootstrap.</p>
-					<Button to="https://marcosorive.github.io/anothertacoplease/">Demo</Button>
-				</Card>
-
-				<Card >
-					<h3 >Astronomic picture of the day</h3>
-					<a href="https://marcosorive.github.io/apod-react/" rel="noopener noreferrer" target="_blank"></a>
-					<p ><br/>React project that displays NASA's Astronomic picture of the day<br/>
-						Stack: ReactJS and Bootstrap.</p>
-					<Button to="https://marcosorive.github.io/apod-react/">Demo</Button>
-				</Card>
+					<Card>
+						<CardHeader>Switch calendar</CardHeader>
+						<CardBody>
+							<Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch"/>
+							<ul>
+								<li>Web app to keep track the Nintendo Switch games releases.</li>
+								<li>Stack: Python, Django, MySQL and MDBootstrap.</li>
+							</ul>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
+							<Button to="https://github.com/marcosorive/switchcalendar">Code</Button>
+						</CardFooter>
+					</Card>
+					<Card>
+						<CardHeader>Torky</CardHeader>
+						<CardBody>
+						
+						<ul>
+							<li>Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</li>
+							<li>Stack: Python, Flask, ReactJS, Bootstrap.</li>
+						</ul>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://marcosorive.github.io/torky/">Demo</Button>
+						</CardFooter>
+					</Card>
+					<Card>
+						<CardHeader>Another taco, please!</CardHeader>
+						<CardBody>
+						<a href="https://marcosorive.github.io/anothertacoplease/" rel="noopener noreferrer" target="_blank"></a>
+						<ul>
+							<li>Frontend project for tacofancy-api, displays random taco recipes.</li>
+							<li>Stack: ReactJS and MDBootstrap.</li>
+						</ul>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://marcosorive.github.io/anothertacoplease/">Demo</Button>
+						</CardFooter>
+					</Card>
+					<Card >
+						<CardHeader>Astronomic picture of the day</CardHeader>
+						<CardBody>
+						<Img fluid={this.props.data.apodReact.childImageSharp.fluid} alt="Apod React"/>
+						<ul>
+							<li>React project that displays NASA's Astronomic picture of the day</li>
+							<li>Stack: ReactJS and Bootstrap.</li>
+						</ul>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://marcosorive.github.io/apod-react/">Demo</Button>
+						</CardFooter>
+					</Card> 
 				</div>
+				<hr className="portfolio-hr"/>
+				<h1 className="text-center">Professional experience</h1>
 			</Layout>
         )
     }
 }
+
+export const pageQuery = graphql`
+query{
+	nSwitch: file(relativePath: {eq:"switch_logo.jpg"}){
+	  childImageSharp{
+		fluid(maxWidth: 1000){
+			...GatsbyImageSharpFluid
+		}
+	  }
+	}
+	apodReact: file(relativePath: {eq:"apod.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+  }
+`

@@ -1,4 +1,4 @@
-html, body, #___gatsby, #___gatsby>div{
+ html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
     height: 100%;
     width: 100%;
 }
@@ -8,4 +8,7 @@ html, body, #___gatsby, #___gatsby>div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.text-center{
+    text-align: center;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import {CSSTransition} from 'react-transition-group';
 import './Navbar.css'
 import {Link} from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export class Navbar extends React.Component{
 
@@ -26,8 +27,8 @@ export class Navbar extends React.Component{
                 {/* <div className="nav-brand"><Link to="/">{this.props.brand}</Link></div> */}
                 <div className="nav-hamburguer-icon" onClick={this.toggleMenu}>☰</div>
                 <div className="nav-links">
-                    {this.props.links.map((node) =>{
-                        return(<Link key={node.text} to={node.link} style={{color: this.props.fontColor}}>{node.text}</Link>);
+                    {this.props.links.map((node) =>{                      
+                        return(<AniLink cover direction="right" duration={1.5} bg="#000000" key={node.text} to={node.link} style={{color: this.props.fontColor}}>{node.text}</AniLink>);
                     })}
                 </div> 
             </nav>
@@ -37,7 +38,7 @@ export class Navbar extends React.Component{
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
                             {this.props.links.map((node) =>{
-                                return(<Link key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" activeClassName="overlay-menu-item-active">{node.text}</Link>);
+                                return(<AniLink swipe direction="left"  key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" activeClassName="overlay-menu-item-active">{node.text}</AniLink>);
                             })}
                         </div>
                     </div>

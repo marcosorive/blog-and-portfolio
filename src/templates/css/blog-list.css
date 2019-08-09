@@ -1,10 +1,10 @@
-.post-list-container{
+.blog-list-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.post-list-column{
+.blog-list-column{
     display: flex;
     flex-direction: column;
 
@@ -14,7 +14,7 @@
     box-shadow: none;
 }
 
-ul{
+.blog-list-navigation{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,6 +23,6 @@ ul{
     padding: 0;
 }
 
-li{
+.blog-list-navigation-item{
     margin: 0;
 }

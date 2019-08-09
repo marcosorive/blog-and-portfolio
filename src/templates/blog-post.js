@@ -13,10 +13,10 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
+        <p className="blog-post-paragraph">{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr/>
-        <ul>
+        <hr className="blog-post-hr"/>
+        <ul className="blog-post-list">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">

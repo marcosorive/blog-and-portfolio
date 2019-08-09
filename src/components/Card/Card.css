@@ -5,9 +5,32 @@
     max-width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center; 
 }
+
+.card-container .card-header{
+    height: 20%;
+    margin:0;
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
+.card-container .card-body{
+
+}
+
+.card-container .card-footer{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-container > ul{
+    list-style: "- ";
+}
+
 
 @media screen and (min-width: 600px) {
     .card-container{

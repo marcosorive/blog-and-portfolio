@@ -15,8 +15,8 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title="Blog">
-        <div className="post-list-container">
-			<div className="post-list-column">
+        <div className="blog-list-container">
+			<div className="blog-list-column">
 				{posts.map(({ node }) => {
 					const title = node.frontmatter.title || node.fields.slug
 					return (              
@@ -33,14 +33,14 @@ class BlogIndex extends React.Component {
 				})}
 		  </div>
         </div>
-        <ul>
+        <ul className="blog-list-navigation">
           {!isFirst && (
             <Link to={`/blog/${prevPage}`} rel="prev">
               ← Previous Page
             </Link>
           )}
           {Array.from({ length: numPages }, (_, i) => (
-            <li key={`pagination-number${i + 1}`}>
+            <li className="blog-list-navigation-item" key={`pagination-number${i + 1}`}>
               <Link
                 to={`/blog/${i === 0 ? '' : i + 1}`}
                 style={{
