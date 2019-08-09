@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Paginated Blog',
-    author: 'Kyle Mathews',
+    title: 'Marcos Orive',
+    author: 'Marcos Orive',
     description:
-      'A paginated starter blog demonstrating what Gatsby can do. Extension of gatsby-starter-blog.',
-    siteUrl: 'https://nickymeuleman.github.io/gatsby-paginated-blog/',
+      'A blog and portfolio made. Made with Gatsby.',
+    siteUrl: 'https://moriveblogandportfolio.netlify.com/',
     social: {
       twitter: `kylemathews`,
     },
   },
-  pathPrefix: '/gatsby-paginated-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
