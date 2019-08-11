@@ -26,3 +26,10 @@
 .blog-list-navigation-item{
     margin: 0;
 }
+
+.blog-list-entry-title{
+    margin-bottom: 0;
+}
+.blog-list-date{
+    margin-top: 0;
+}

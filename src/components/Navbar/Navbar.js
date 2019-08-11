@@ -28,7 +28,7 @@ export class Navbar extends React.Component{
                 <div className="nav-hamburguer-icon" onClick={this.toggleMenu}>☰</div>
                 <div className="nav-links">
                     {this.props.links.map((node) =>{                      
-                        return(<AniLink cover direction="right" duration={1.5} bg="#000000" key={node.text} to={node.link} style={{color: this.props.fontColor}}>{node.text}</AniLink>);
+                        return(<AniLink fade duration={0.5} bg="#000000" key={node.text} to={node.link} style={{color: this.props.fontColor}}>{node.text}</AniLink>);
                     })}
                 </div> 
             </nav>
@@ -38,7 +38,7 @@ export class Navbar extends React.Component{
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
                             {this.props.links.map((node) =>{
-                                return(<AniLink swipe direction="left"  key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" activeClassName="overlay-menu-item-active">{node.text}</AniLink>);
+                                return(<AniLink fade key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" activeClassName="overlay-menu-item-active">{node.text}</AniLink>);
                             })}
                         </div>
                     </div>

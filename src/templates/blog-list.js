@@ -21,12 +21,12 @@ class BlogIndex extends React.Component {
 					const title = node.frontmatter.title || node.fields.slug
 					return (              
 						<div key={node.fields.slug}>
-						<h3>
+						<h3 className="blog-list-entry-title">
 							<Link to={node.fields.slug}>
 							{title}
 							</Link>
 						</h3>
-						<p>{node.frontmatter.date}</p>
+						<div className="blog-list-date">{node.frontmatter.date}</div>
 						<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
 						</div>              
 					)
