@@ -1,3 +1,15 @@
+.blog-post-layout-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin:1em;
+}
+.blog-post-layout-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .blog-post-paragraph{
     display: block;
     margin-bottom: 1em;
@@ -12,4 +24,14 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
+}
+
+@media only screen and (min-width: 600px){
+    .blog-post-layout-row{
+        width:100%;
+        margin: 0;
+    }
+    .blog-post-layout-column{
+        width:60%;
+    }
 }

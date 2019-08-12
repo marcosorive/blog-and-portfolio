@@ -10,7 +10,6 @@ export default class portfolio extends React.Component{
     render(){
         return(
 			<Layout title="Portfolio">
-				<h1 className="text-center">Personal projects</h1>
 				<div className="card-layout">
 					<Card>
 						<CardHeader>Switch calendar</CardHeader>

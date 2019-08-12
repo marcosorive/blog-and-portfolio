@@ -9,7 +9,7 @@ body{
 }
 .nav-hamburguer-icon{
     font-size: 1.2em;
-    display: block;
+    display: block;    
 }
 .nav-hamburguer-icon:hover{
     color:grey;
@@ -17,7 +17,7 @@ body{
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 1em;
 }
@@ -43,6 +43,7 @@ nav{
 }
 
 @media screen and (min-width: 600px) {
+
     .nav-links{
         display:flex;
         flex-direction: row;
@@ -100,6 +101,7 @@ nav{
 }
 
 .overlay-menu{
+    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,12 +110,12 @@ nav{
     margin-bottom: 10em;
 }
 
-.overlay-menu-item{
+.overlay-menu-item{    
     box-shadow: 0 0 0 0;
     font-size: 3em;
     font-weight: 100;
     text-decoration: none;
-    color: #818181;
+    color: #dddddd;
     transition: 0.3s;
 }
 .overlay-menu-item-active{

@@ -7,9 +7,8 @@
 .blog-list-column{
     display: flex;
     flex-direction: column;
-
+    width:90%;
 }
-
 .link-no-shadow{
     box-shadow: none;
 }
@@ -30,6 +29,20 @@
 .blog-list-entry-title{
     margin-bottom: 0;
 }
+.blog-list-entry-title a{
+    color:inherit;
+}
 .blog-list-date{
     margin-top: 0;
+}
+
+@media only screen and (min-width: 600px){
+    .blog-list-column{
+        display: flex;
+        flex-direction: column;
+        width:60%;
+    }
+    .blog-list-container{
+        margin-top: 2em;
+    }
 }
