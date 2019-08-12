@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import {Card,CardHeader,CardBody,CardFooter} from '../components/Card/Card';
+import {Card,CardImageHeader,CardBody,CardFooter} from '../components/Card/Card';
 import {Button} from '../components/Button/Button';
 import './css/portfolio.css'
 import { graphql } from 'gatsby';
@@ -12,13 +12,12 @@ export default class portfolio extends React.Component{
 			<Layout title="Portfolio">
 				<div className="card-layout">
 					<Card>
-						<CardHeader>Switch calendar</CardHeader>
+						<CardImageHeader><Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch"/></CardImageHeader>
 						<CardBody>
-							<Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch"/>
-							<ul>
-								<li>Web app to keep track the Nintendo Switch games releases.</li>
-								<li>Stack: Python, Django, MySQL and MDBootstrap.</li>
-							</ul>
+							<h2>Switch Calendar</h2>
+							<div className="card-body-stack">Python, Django, MySQL and MDBootstrap.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Web app to keep track the Nintendo Switch games releases.</p>						
 						</CardBody>
 						<CardFooter>
 							<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
@@ -26,7 +25,7 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card>
-						<CardHeader>Torky</CardHeader>
+						<CardImageHeader>Torky</CardImageHeader>
 						<CardBody>
 						
 						<ul>
@@ -39,7 +38,7 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card>
-						<CardHeader>Another taco, please!</CardHeader>
+						<CardImageHeader>Another taco, please!</CardImageHeader>
 						<CardBody>
 						<a href="https://marcosorive.github.io/anothertacoplease/" rel="noopener noreferrer" target="_blank"></a>
 						<ul>
@@ -52,9 +51,9 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card >
-						<CardHeader>Astronomic picture of the day</CardHeader>
+						<CardImageHeader><Img fluid={this.props.data.apodReact.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
 						<CardBody>
-						<Img fluid={this.props.data.apodReact.childImageSharp.fluid} alt="Apod React"/>
+						Astronomic picture of the day
 						<ul>
 							<li>React project that displays NASA's Astronomic picture of the day</li>
 							<li>Stack: ReactJS and Bootstrap.</li>

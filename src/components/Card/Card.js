@@ -9,9 +9,9 @@ export function Card(props){
     )
 }
 
-export function CardHeader(props){
+export function CardImageHeader(props){
     return(
-        <div className="card-header">
+        <div className="card-image-header">
             {props.children}
         </div>
     )
