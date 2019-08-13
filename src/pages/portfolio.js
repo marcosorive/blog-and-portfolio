@@ -15,26 +15,13 @@ export default class portfolio extends React.Component{
 						<CardImageHeader><Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch"/></CardImageHeader>
 						<CardBody>
 							<h2>Switch Calendar</h2>
-							<div className="card-body-stack">Python, Django, MySQL and MDBootstrap.</div>
+							<div className="card-body-stack">Python, Django, MySQL, MDBootstrap.</div>
 							<hr className="card-body-hr"/>
 							<p className="card-body-description">Web app to keep track the Nintendo Switch games releases.</p>						
 						</CardBody>
 						<CardFooter>
 							<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
 							<Button to="https://github.com/marcosorive/switchcalendar">Code</Button>
-						</CardFooter>
-					</Card>
-					<Card>
-						<CardImageHeader><Img fluid={this.props.data.torky.childImageSharp.fluid} alt="Torky"/></CardImageHeader>
-						<CardBody>
-							<h2>Torky</h2>
-							<div className="card-body-stack">Python, Flask, ReactJS, Bootstrap.</div>
-							<hr className="card-body-hr"/>
-							<p className="card-body-description">Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</p>
-						</CardBody>
-						<CardFooter>
-							<Button to="https://github.com/marcosorive/torky-api">Demo</Button>
-							<Button to="https://marcosorive.github.io/torky/">Demo</Button>
 						</CardFooter>
 					</Card>
 					<Card>
@@ -61,6 +48,30 @@ export default class portfolio extends React.Component{
 						<CardFooter>
 							<Button to="https://github.com/marcosorive/apod-react">Code</Button>
 							<Button to="https://marcosorive.github.io/apod-react/">Demo</Button>
+						</CardFooter>
+					</Card> 
+					<Card>
+						<CardImageHeader><Img fluid={this.props.data.torky.childImageSharp.fluid} alt="Torky"/></CardImageHeader>
+						<CardBody>
+							<h2>Torky</h2>
+							<div className="card-body-stack">Python, Flask, ReactJS, Bootstrap.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</p>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://github.com/marcosorive/torky-api">Demo</Button>
+							<Button to="https://marcosorive.github.io/torky/">Demo</Button>
+						</CardFooter>
+					</Card>
+					<Card>
+						<CardBody>
+							<h2>Blog and portfolio</h2>
+							<div className="card-body-stack">Gatsby, Vanilla CSS, Netlify.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">This website that you are seeing right now. Serves as my portfolio and blog. </p>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://github.com/marcosorive/blog-and-portfolio">Code</Button>
 						</CardFooter>
 					</Card> 
 				</div>

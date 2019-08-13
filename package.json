@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "marcos-orive-blog-and-portfolio",
   "private": true,
-  "description": "A starter for a paginated blog powered by Gatsby and Markdown",
+  "description": "My blog and portfolio, made with gatsby.",
   "version": "1.1.0",
-  "author": "Nicky Meuleman",
-  "bugs": {
-    "url": "https://github.com/NickyMeuleman/gatsby-paginated-blog/issues"
-  },
+  "author": "Marcos Orive",
   "dependencies": {
     "gatsby": "^2.13.55",
     "gatsby-image": "^2.2.8",
@@ -38,7 +35,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/NickyMeuleman/gatsby-paginated-blog#readme",
+  "homepage": "https://marcos.orive.me",
   "keywords": [
     "gatsby"
   ],
@@ -46,13 +43,13 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NickyMeuleman/gatsby-paginated-blog.git"
+    "url": "git+https://github.com/marcosorive/blog-and-portfolio.git"
   },
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "test": "echo \"No test, sorry.\"",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",

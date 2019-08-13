@@ -3,10 +3,10 @@ module.exports = {
     title: 'Marcos Orive',
     author: 'Marcos Orive',
     description:
-      'A blog and portfolio made. Made with Gatsby.',
+      'A blog and portfolio made. Made with Gatsby. Based on Gatsby paginated blog starter.',
     siteUrl: 'https://moriveblogandportfolio.netlify.com/',
     social: {
-      twitter: `kylemathews`,
+      twitter: `marcosorive`,
     },
   },
   pathPrefix: '/',
@@ -59,13 +59,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Marcos Orive: blog and portfolio.`,
+        short_name: `MarcosOrive`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#45b649`,
         display: `minimal-ui`,
-        // icon: `content/assets/gatsby-icon.png`,
+        icon: `images/icon.png`,
       },
     },
     `gatsby-plugin-offline`,

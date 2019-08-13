@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:center; 
+    align-items:stretch; 
+    height: fit-content;
 }
 
 .card-container .card-image-header{
