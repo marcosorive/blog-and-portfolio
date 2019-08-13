@@ -25,26 +25,24 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card>
-						<CardImageHeader>Torky</CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.torky.childImageSharp.fluid} alt="Torky"/></CardImageHeader>
 						<CardBody>
-						
-						<ul>
-							<li>Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</li>
-							<li>Stack: Python, Flask, ReactJS, Bootstrap.</li>
-						</ul>
+							<h2>Torky</h2>
+							<div className="card-body-stack">Python, Flask, ReactJS, Bootstrap.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</p>
 						</CardBody>
 						<CardFooter>
 							<Button to="https://marcosorive.github.io/torky/">Demo</Button>
 						</CardFooter>
 					</Card>
 					<Card>
-						<CardImageHeader>Another taco, please!</CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.anotherTaco.childImageSharp.fluid} alt="Another taco, please!"/></CardImageHeader>
 						<CardBody>
-						<a href="https://marcosorive.github.io/anothertacoplease/" rel="noopener noreferrer" target="_blank"></a>
-						<ul>
-							<li>Frontend project for tacofancy-api, displays random taco recipes.</li>
-							<li>Stack: ReactJS and MDBootstrap.</li>
-						</ul>
+							<h2>Another taco, please!</h2>
+							<div className="card-body-stack">ReactJS and MDBootstrap.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Frontend project for tacofancy-api, displays random taco recipes.</p>
 						</CardBody>
 						<CardFooter>
 							<Button to="https://marcosorive.github.io/anothertacoplease/">Demo</Button>
@@ -53,11 +51,10 @@ export default class portfolio extends React.Component{
 					<Card >
 						<CardImageHeader><Img fluid={this.props.data.apodReact.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
 						<CardBody>
-						Astronomic picture of the day
-						<ul>
-							<li>React project that displays NASA's Astronomic picture of the day</li>
-							<li>Stack: ReactJS and Bootstrap.</li>
-						</ul>
+							<h2>Astronomic picture of the day</h2>
+							<div className="card-body-stack">ReactJS, Bootstrap</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">React project that displays NASA's Astronomic picture of the day</p>
 						</CardBody>
 						<CardFooter>
 							<Button to="https://marcosorive.github.io/apod-react/">Demo</Button>
@@ -73,7 +70,7 @@ export default class portfolio extends React.Component{
 
 export const pageQuery = graphql`
 query{
-	nSwitch: file(relativePath: {eq:"switch_logo.jpg"}){
+	nSwitch: file(relativePath: {eq:"switchcalendar.png"}){
 	  childImageSharp{
 		fluid(maxWidth: 1000){
 			...GatsbyImageSharpFluid
@@ -81,6 +78,27 @@ query{
 	  }
 	}
 	apodReact: file(relativePath: {eq:"apod.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  anotherTaco: file(relativePath: {eq:"tacos.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  torky: file(relativePath: {eq:"torky.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  raquel: file(relativePath: {eq:"raquel.png"}){
 		childImageSharp{
 		  fluid(maxWidth: 1000){
 			  ...GatsbyImageSharpFluid

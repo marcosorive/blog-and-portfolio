@@ -1,14 +1,15 @@
 button{
     background-color: #91a6ff;
     font-size: 1.5em;
-    padding-top: .8em;
-    padding-bottom:.8em;
-    padding-left:1.5em;
-    padding-right: 1.5em;
+    padding-top: .6em;
+    padding-bottom:.6em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
     color:white;
     border:none;
     transition: 0.5s;
     cursor: pointer;
+    margin:.5em;
 }
 button > a{
     color:white;
