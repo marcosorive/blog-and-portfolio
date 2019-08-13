@@ -1,9 +1,20 @@
+html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
+    height: 100%;
+    width: 100%;
+}
 .index-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 70%;
 }
 .text-center{
     text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .index-container{
+        height: fit-content;
+    }
 }

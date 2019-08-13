@@ -1,5 +1,5 @@
 button{
-    background-color: #91a6ff;
+    background-color: #45b649;
     font-size: 1.5em;
     padding-top: .6em;
     padding-bottom:.6em;
@@ -16,7 +16,7 @@ button > a{
     text-decoration: none;
 }
 button:hover{
-    background-color: #7889d3;
+    background-color: #dce35b;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
 }

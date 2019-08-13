@@ -33,6 +33,7 @@ export default class portfolio extends React.Component{
 							<p className="card-body-description">Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</p>
 						</CardBody>
 						<CardFooter>
+							<Button to="https://github.com/marcosorive/torky-api">Demo</Button>
 							<Button to="https://marcosorive.github.io/torky/">Demo</Button>
 						</CardFooter>
 					</Card>
@@ -40,11 +41,12 @@ export default class portfolio extends React.Component{
 						<CardImageHeader><Img fluid={this.props.data.anotherTaco.childImageSharp.fluid} alt="Another taco, please!"/></CardImageHeader>
 						<CardBody>
 							<h2>Another taco, please!</h2>
-							<div className="card-body-stack">ReactJS and MDBootstrap.</div>
+							<div className="card-body-stack">ReactJS, MDBootstrap.</div>
 							<hr className="card-body-hr"/>
 							<p className="card-body-description">Frontend project for tacofancy-api, displays random taco recipes.</p>
 						</CardBody>
 						<CardFooter>
+							<Button to="https://github.com/marcosorive/anothertacoplease">Code</Button>
 							<Button to="https://marcosorive.github.io/anothertacoplease/">Demo</Button>
 						</CardFooter>
 					</Card>
@@ -57,12 +59,27 @@ export default class portfolio extends React.Component{
 							<p className="card-body-description">React project that displays NASA's Astronomic picture of the day</p>
 						</CardBody>
 						<CardFooter>
+							<Button to="https://github.com/marcosorive/apod-react">Code</Button>
 							<Button to="https://marcosorive.github.io/apod-react/">Demo</Button>
 						</CardFooter>
 					</Card> 
 				</div>
 				<hr className="portfolio-hr"/>
 				<h1 className="text-center">Professional experience</h1>
+				<div className="card-layout">
+					<Card>
+						<CardImageHeader><Img fluid={this.props.data.apodReact.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardBody>
+							<h2>Inmobiliaria Raquel Vázquez</h2>
+							<div className="card-body-stack">Python, Django, MySQL, Bootstrap.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Web app for internal data managment. Working with a legacy DB.</p>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://www.inmobiliariaraquelvazquez.com">Visit</Button>
+						</CardFooter>
+					</Card> 
+				</div>
 			</Layout>
         )
     }
