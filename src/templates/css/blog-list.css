@@ -27,13 +27,24 @@
 }
 
 .blog-list-entry-title{
+    font-size: 2em;
+    font-weight: 200;
     margin-bottom: 0;
+    padding-bottom: 0.3em;
 }
 .blog-list-entry-title a{
     color:inherit;
+    text-decoration: none;
+}
+.blog-list-entry-title a:hover{
+    text-decoration: underline;
 }
 .blog-list-date{
     margin-top: 0;
+}
+
+.blog-list-excerpt{
+    font-size: 1.2em;
 }
 
 @media only screen and (min-width: 600px){

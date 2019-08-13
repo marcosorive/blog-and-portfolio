@@ -5,7 +5,6 @@ import './css/blog-list.css'
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
@@ -26,8 +25,8 @@ class BlogIndex extends React.Component {
 							{title}
 							</Link>
 						</h2>
-						<div className="blog-list-date">{node.frontmatter.date}</div>
-						<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+						<div className="blog-list-date">Published {node.frontmatter.date}</div>
+						<p className="blog-list-excerpt" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
 						</div>              
 					)
 				})}
@@ -69,11 +68,6 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
