@@ -20,8 +20,8 @@ export default class portfolio extends React.Component{
 							<p className="card-body-description">Web app to keep track the Nintendo Switch games releases.</p>						
 						</CardBody>
 						<CardFooter>
-							<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
 							<Button to="https://github.com/marcosorive/switchcalendar">Code</Button>
+							<Button to="https://switchcalendar.pythonanywhere.com">Demo</Button>
 						</CardFooter>
 					</Card>
 					<Card>
@@ -59,7 +59,7 @@ export default class portfolio extends React.Component{
 							<p className="card-body-description">Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.</p>
 						</CardBody>
 						<CardFooter>
-							<Button to="https://github.com/marcosorive/torky-api">Demo</Button>
+							<Button to="https://github.com/marcosorive/torky-api">Code</Button>
 							<Button to="https://marcosorive.github.io/torky/">Demo</Button>
 						</CardFooter>
 					</Card>
@@ -79,7 +79,7 @@ export default class portfolio extends React.Component{
 				<h1 className="text-center">Professional experience</h1>
 				<div className="card-layout">
 					<Card>
-						<CardImageHeader><Img fluid={this.props.data.apodReact.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.raquel.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
 						<CardBody>
 							<h2>Inmobiliaria Raquel Vázquez</h2>
 							<div className="card-body-stack">Python, Django, MySQL, Bootstrap.</div>
