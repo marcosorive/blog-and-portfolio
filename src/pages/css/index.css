@@ -7,14 +7,34 @@ html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: fit-content;
+    margin: 1em;
 }
-.text-center{
-    text-align: center;
+.index-cheer{
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 2vmin;
+    margin-bottom: 0.5em;
 }
-
+.index-description{
+    font-size: 1.8em;
+    font-weight: 200;
+    margin-bottom: 2vmin;
+}
+.index-social-links{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (min-width: 600px) {
     .index-container{
         height: fit-content;
+    }
+
+    .index-social-links{
+        flex-direction: row;
+        flex-wrap:wrap;
     }
 }

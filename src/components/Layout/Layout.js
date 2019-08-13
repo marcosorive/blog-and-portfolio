@@ -16,7 +16,7 @@ class Layout extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
           />
         {children}
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     )
   }

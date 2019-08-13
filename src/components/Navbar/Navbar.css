@@ -57,6 +57,7 @@ nav{
         color:white;
         text-decoration: none;
         font-size: 1.4em;
+        transition: box-shadow 0.3s ease-out;
     }
 
     .nav-links > a:hover{
@@ -75,7 +76,6 @@ nav{
     overflow: hidden;
     position: fixed;
     background-color: black;
-    opacity: 0.9;
     top:0;
     right: 0;
     bottom: 0;
