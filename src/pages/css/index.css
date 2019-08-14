@@ -10,6 +10,16 @@ html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
     height: fit-content;
     margin: 1em;
 }
+
+.index-text-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
 .index-cheer{
     font-size: 3em;
     font-weight: 200;
@@ -19,7 +29,7 @@ html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
 .index-description{
     font-size: 1.8em;
     font-weight: 200;
-    margin-bottom: 2vmin;
+    margin-bottom: 0.8em;
 }
 .index-social-links{
     display:flex;
@@ -28,13 +38,17 @@ html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
     justify-content: center;
     align-items: center;
 }
-@media screen and (min-width: 600px) {
-    .index-container{
-        height: fit-content;
-    }
 
+.index-social-links button{
+    font-size: 1.2em;
+}
+@media screen and (min-width: 600px) {
     .index-social-links{
         flex-direction: row;
         flex-wrap:wrap;
     }
+    .index-text-container{
+        width: 60%;
+    }
+
 }

@@ -7,6 +7,7 @@ button{
     text-transform: uppercase;
     padding: 0.5em;
     transition: background-color 0.5s ease;
+    font-size: 1em;
 }
 button:hover{
     background-color: #f0f0f0;
