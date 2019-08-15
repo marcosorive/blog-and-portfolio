@@ -26,6 +26,22 @@
     padding: 0;
 }
 
+.blog-post-layout-column h2{
+    font-size: 1.7em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.blog-post-layout-column p{
+    font-size: 1.3em;
+}
+
+.blog-post-layout-column a{
+    color:inherit;
+}
+
+
+
 @media only screen and (min-width: 600px){
     .blog-post-layout-row{
         width:100%;
