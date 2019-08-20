@@ -22,12 +22,12 @@ export default class portfolio extends React.Component{
 						<CardFooter><Button>Ask me for code or Demo</Button></CardFooter>				
 					</Card>
 					<Card>
-						<CardImageHeader><Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch"/></CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch calendar"/></CardImageHeader>
 						<CardBody>
 							<h2>Switch Calendar</h2>
 							<div className="card-body-stack">Python, Django, MySQL, MDBootstrap.</div>
 							<hr className="card-body-hr"/>
-							<p className="card-body-description">Web app to keep track the Nintendo Switch games releases.</p>						
+							<p className="card-body-description">Web app to keep track the Nintendo Switch games releases. Users can register/log in and create their own calendar.</p>						
 						</CardBody>
 						<CardFooter>
 							<Button to="https://github.com/marcosorive/switchcalendar">Code</Button>
