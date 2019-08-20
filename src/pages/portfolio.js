@@ -11,6 +11,16 @@ export default class portfolio extends React.Component{
         return(
 			<Layout title="Portfolio">
 				<div className="card-layout">
+				<Card>
+						<CardImageHeader><Img fluid={this.props.data.ubureactvr.childImageSharp.fluid} alt="Nintendo switch"/></CardImageHeader>
+						<CardBody>
+							<h2>UBU ReactVR</h2>
+							<div className="card-body-stack">Node.js with typescript, React, React Native, React360.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">My final degree project. Web, smartphone and VR/300 apps with a Node.js server. Manage and inspect 3D models in VR. Made in colaboration with <a href="https://hpscds.com/" rel="noopener noreferrer" target="_blank">HP SCDS.</a></p>						
+						</CardBody>
+						<CardFooter><Button>Ask me for code or Demo</Button></CardFooter>				
+					</Card>
 					<Card>
 						<CardImageHeader><Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch"/></CardImageHeader>
 						<CardBody>
@@ -89,7 +99,31 @@ export default class portfolio extends React.Component{
 						<CardFooter>
 							<Button to="https://www.inmobiliariaraquelvazquez.com">Visit</Button>
 						</CardFooter>
-					</Card> 
+					</Card>
+					<Card>
+						<CardImageHeader><Img fluid={this.props.data.csa.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardBody>
+							<h2>CSA.</h2>
+							<div className="card-body-stack">Software developer</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description"> Worked in a legacy ticketing system.</p>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://www.csa.es/">Visit</Button>
+						</CardFooter>
+					</Card>
+					<Card>
+						<CardImageHeader><Img fluid={this.props.data.hpscds.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardBody>
+							<h2>HP SCDS</h2>
+							<div className="card-body-stack">Software engineer.</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Developing software for large format printers.</p>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://www.csa.es/">Visit</Button>
+						</CardFooter>
+					</Card>
 				</div>
 			</Layout>
         )
@@ -98,6 +132,13 @@ export default class portfolio extends React.Component{
 
 export const pageQuery = graphql`
 query{
+	ubureactvr: file(relativePath: {eq:"ubureactvr.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
 	nSwitch: file(relativePath: {eq:"switchcalendar.png"}){
 	  childImageSharp{
 		fluid(maxWidth: 1000){
@@ -127,6 +168,20 @@ query{
 		}
 	  }
 	  raquel: file(relativePath: {eq:"raquel.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  csa: file(relativePath: {eq:"csa.jpg"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  hpscds: file(relativePath: {eq:"hpscds.png"}){
 		childImageSharp{
 		  fluid(maxWidth: 1000){
 			  ...GatsbyImageSharpFluid
