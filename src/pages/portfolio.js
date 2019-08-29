@@ -19,7 +19,7 @@ export default class portfolio extends React.Component{
 							<hr className="card-body-hr"/>
 							<p className="card-body-description">My final degree project. Web, smartphone and VR/300 apps with a Node.js server. Manage and inspect 3D models in VR. Made in colaboration with <a href="https://hpscds.com/" rel="noopener noreferrer" target="_blank">HP SCDS.</a></p>						
 						</CardBody>
-						<CardFooter><Button>Ask me for code or Demo</Button></CardFooter>				
+						<CardFooter><Button to="https://hpscds.com/observatorio_proyectos/reactvr/">More info</Button></CardFooter>				
 					</Card>
 					<Card>
 						<CardImageHeader><Img fluid={this.props.data.nSwitch.childImageSharp.fluid} alt="Nintendo switch calendar"/></CardImageHeader>

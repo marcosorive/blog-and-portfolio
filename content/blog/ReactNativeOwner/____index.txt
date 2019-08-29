@@ -1,0 +1,12 @@
+---
+title: React Native and Expo. When I couldn't see the forest for the trees.
+date: '2018-08-30T00:46:37.121Z'
+---
+
+[WIP][DRAFT]
+
+Hi everyone!
+
+This I was finishing my last project [Torky Native](https://github.com/marcosorive/torky-native) using React Native and Expo. And it was time to build the package. Oh boy I was ready to release it to the world, If only I knew what was coming for me.
+
+Evertime I type 'expo build:android' I was getting a 401 error, which means I was unauthorized to use expo with my account. What?? 
