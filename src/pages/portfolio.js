@@ -74,6 +74,19 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card>
+						<CardImageHeader><Img fluid={this.props.data.torkynative.childImageSharp.fluid} alt="Torky native screenshot"/></CardImageHeader>
+						<CardBody>
+							<h2>Torky Native</h2>
+							<div className="card-body-stack">React native</div>
+							<hr className="card-body-hr"/>
+							<p className="card-body-description">Smartphone for Torky, made with React Native. It will be avaiible in the Google Play store as soon as Google gets it approved.</p>
+						</CardBody>
+						<CardFooter>
+							<Button to="https://github.com/marcosorive/torky-native">Code</Button>
+							<Button to="">Avaiible soon!</Button>
+						</CardFooter>
+					</Card>
+					<Card>
 						<CardBody>
 							<h2>Blog and portfolio</h2>
 							<div className="card-body-stack">Gatsby, Vanilla CSS, Netlify.</div>
@@ -89,7 +102,7 @@ export default class portfolio extends React.Component{
 				<h1 className="text-center">Professional experience</h1>
 				<div className="card-layout">
 					<Card>
-						<CardImageHeader><Img fluid={this.props.data.raquel.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.raquel.childImageSharp.fluid} alt="Raquel Vazquez screenshot"/> </CardImageHeader>
 						<CardBody>
 							<h2>Inmobiliaria Raquel Vázquez</h2>
 							<div className="card-body-stack">Python, Django, MySQL, Bootstrap.</div>
@@ -101,7 +114,7 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card>
-						<CardImageHeader><Img fluid={this.props.data.csa.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.csa.childImageSharp.fluid} alt="Csa logo"/> </CardImageHeader>
 						<CardBody>
 							<h2>CSA.</h2>
 							<div className="card-body-stack">Software developer</div>
@@ -113,7 +126,7 @@ export default class portfolio extends React.Component{
 						</CardFooter>
 					</Card>
 					<Card>
-						<CardImageHeader><Img fluid={this.props.data.hpscds.childImageSharp.fluid} alt="Apod React"/> </CardImageHeader>
+						<CardImageHeader><Img fluid={this.props.data.hpscds.childImageSharp.fluid} alt="HP Logo"/> </CardImageHeader>
 						<CardBody>
 							<h2>HP SCDS</h2>
 							<div className="card-body-stack">Software engineer.</div>
@@ -161,6 +174,13 @@ query{
 		}
 	  }
 	  torky: file(relativePath: {eq:"torky.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  torkynative: file(relativePath: {eq:"torkynative.jpg"}){
 		childImageSharp{
 		  fluid(maxWidth: 1000){
 			  ...GatsbyImageSharpFluid
