@@ -83,7 +83,7 @@ export default class portfolio extends React.Component{
 						</CardBody>
 						<CardFooter>
 							<Button to="https://github.com/marcosorive/torky-native">Code</Button>
-							<Button to="">Avaiible soon!</Button>
+							<Button to="https://play.google.com/store/apps/details?id=me.orive.marcos.torkynative">Google Play</Button>
 						</CardFooter>
 					</Card>
 					<Card>
