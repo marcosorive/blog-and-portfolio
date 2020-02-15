@@ -1,0 +1,111 @@
+[
+    {
+        "title":"UBU ReactVR",
+        "stack": "Node.js with typescript, React, React Native, React360.",
+        "description": "My final degree project. Web, smartphone and VR/300 apps with a Node.js server. Manage and inspect 3D models in VR. Made in colaboration with <a href=\"https://hpscds.com/\" rel=\"noopener noreferrer\" target=\"_blank\">HP SCDS</a>.",
+        "image": "ubureactvr",
+        "altImage": "Ubu ReactVr",
+        "buttons": [
+            {
+                "url": "https://hpscds.com/observatorio_proyectos/reactvr/",
+                "text": "More info"
+            }
+        ]
+    },
+    {
+        "title":"Switch Calendar",
+        "stack": "Python, Django, MySQL, MDBootstrap.",
+        "description": "Web app to keep track the Nintendo Switch games releases. Users can register/log in and create their own calendar.",
+        "image": "nSwitch",
+        "altImage": "Nintendo switch calendar",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/switchcalendar",
+                "text": "Code"
+            },
+            {
+                "url": "https://switchcalendar.pythonanywhere.com",
+                "text": "Demo"
+            }
+        ]
+    },
+    {
+        "title":"Torky",
+        "stack": "Python, Flask, ReactJS, Bootstrap.",
+        "description": "Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.",
+        "image": "torky",
+        "altImage": "Torky",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/torky-api",
+                "text": "Code"
+            },
+            {
+                "url": "https://marcosorive.github.io/torky/",
+                "text": "Demo"
+            }
+        ]
+    },
+    {
+        "title":"Torky Native",
+        "stack": "React native",
+        "description": "Smartphone for Torky, made with React Native. It will be avaiible in the Google Play store as soon as Google gets it approved.",
+        "image": "torkynative",
+        "altImage": "Torky native screenshot",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/torky-native",
+                "text": "Code"
+            },
+            {
+                "url": "https://play.google.com/store/apps/details?id=me.orive.marcos.torkynative",
+                "text": "Google Play"
+            }
+        ]
+    },
+    {
+        "title":"Astronomic picture of the day<",
+        "stack": "ReactJS, Bootstrap",
+        "description": "React project that displays NASA's Astronomic picture of the day",
+        "image": "apodReact",
+        "altImage": "Apod React screenshot",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/apod-react",
+                "text": "Code"
+            },
+            {
+                "url": "https://marcosorive.github.io/apod-react/",
+                "text": "Demo"
+            }
+        ]
+    },
+    {
+        "title":"Another taco, please!",
+        "stack": "ReactJS, MDBootstrap.",
+        "description": "Frontend project for tacofancy-api, displays random taco recipes.",
+        "image": "anotherTaco",
+        "altImage": "Another taco, please!",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/anothertacoplease",
+                "text": "Code"
+            },
+            {
+                "url": "https://marcosorive.github.io/anothertacoplease/",
+                "text": "Demo"
+            }
+        ]
+    },
+    {
+        "title":"Blog and portfolio",
+        "stack": "Gatsby, Vanilla CSS, Netlify.",
+        "description": "This website that you are seeing right now. Serves as my portfolio and blog.",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/blog-and-portfolio",
+                "text": "Code"
+            }
+        ]
+    }
+]
