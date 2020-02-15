@@ -1,0 +1,41 @@
+[
+    {
+        "title":"Inmobiliaria Raquel Vázquez",
+        "stack": "Python, Django, MySQL, Bootstrap.",
+        "description": "Web app for internal data managment. Working with a legacy DB.",
+        "image": "raquel",
+        "altImage": "Inmobiliaria raquel vazquez screenshot",
+        "buttons": [
+            {
+                "text": "Visit",
+                "url": "https://www.inmobiliariaraquelvazquez.com"
+            }
+        ]
+    },
+    {
+        "title":"CSA",
+        "stack": "Software developer",
+        "description": "Worked in a legacy ticketing system.",
+        "image": "csa",
+        "altImage": "CSA Screenshot",
+        "buttons": [
+            {
+                "text": "Visit",
+                "url": "https://www.csa.es/"
+            }
+        ]
+    },
+    {
+        "title":"HP SCDS",
+        "stack":"Software engineer.",
+        "description": "Developing software for large format printers.",
+        "image": "hpscds",
+        "altImage": "HP SCDS screenshot.",
+        "buttons": [
+            {
+                "text": "Visit",
+                "url": "https://hpscds.com/ "
+            }
+        ]
+    }
+]
