@@ -18,6 +18,7 @@ export default class Portfolio extends React.Component{
 		}
 		this.setProjectCardsContent = this.setProjectCardsContent.bind(this);
 		this.setExperiencieCardsContent = this.setExperiencieCardsContent.bind(this);
+		console.log(props.data)
 	}
 
 	componentDidMount(){
@@ -158,6 +159,13 @@ query{
 		}
 	  }
 	  hpscds: file(relativePath: {eq:"hpscds.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
+	  hotfeet: file(relativePath: {eq:"hotfeet.png"}){
 		childImageSharp{
 		  fluid(maxWidth: 1000){
 			  ...GatsbyImageSharpFluid
