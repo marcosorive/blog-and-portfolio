@@ -30,6 +30,19 @@
         ]
     },
     {
+        "title":"HotFeet",
+        "stack": "C#, Unity",
+        "description": "Smartphones and PC videogame I'm developing with some friends.",
+        "image": "hotfeet",
+        "altImage": "Hotfeet screenshot.",
+        "buttons": [
+            {
+                "url": "https://javiropos.visualstudio.com/_git/HotFeet",
+                "text": "Code"
+            }
+        ]
+    },
+    {
         "title":"Torky",
         "stack": "Python, Flask, ReactJS, Bootstrap.",
         "description": "Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.",
