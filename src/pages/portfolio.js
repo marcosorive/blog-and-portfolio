@@ -172,5 +172,12 @@ query{
 		  }
 		}
 	  }
+	  navbar: file(relativePath: {eq:"navbar.png"}){
+		childImageSharp{
+		  fluid(maxWidth: 1000){
+			  ...GatsbyImageSharpFluid
+		  }
+		}
+	  }
   }
 `

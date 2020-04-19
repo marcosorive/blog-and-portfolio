@@ -77,7 +77,24 @@
         ]
     },
     {
-        "title":"Astronomic picture of the day<",
+        "title":"Responsive navbar with overlay",
+        "stack": "React, CSS",
+        "description": "A React component that consists of a customizable navbar that mutates into an overlay menu when the screen is smaller than 600px. Available in NPM.",
+        "image": "navbar",
+        "altImage": "Navbar screenshot",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/react-responsive-navbar-overlay",
+                "text": "Code"
+            },
+            {
+                "url": "https://www.npmjs.com/package/react-responsive-navbar-overlay",
+                "text": "NPM"
+            }
+        ]
+    },
+    {
+        "title":"Astronomic picture of the day",
         "stack": "ReactJS, Bootstrap",
         "description": "React project that displays NASA's Astronomic picture of the day",
         "image": "apodReact",
