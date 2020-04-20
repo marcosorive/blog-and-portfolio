@@ -179,5 +179,12 @@ query{
 		  }
 		}
 	  }
+	actasks: file(relativePath: {eq:"actasks.png"}){
+		childImageSharp{
+			fluid(maxWidth: 1000){
+				...GatsbyImageSharpFluid
+			}
+		}
+	}
   }
 `
