@@ -1,5 +1,7 @@
-# WIP
+# Blog & Portfolio
 
-Hi! 
+You see it here: [https://marcos.orive.me](https://marcos.orive.me)
 
-This is my new blog & portfolio. Made with gatsby and based on the gatsby starter paginated blog. 
+## Tech stack
+
+Done with Gatsby and vanilla CSS. Deployed in netlify.
