@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from '../components/Layout/Layout';
+import Layout from '../../components/Layout/Layout';
 import './css/contact.css'
 
 export default class contact extends React.Component{
@@ -8,7 +8,7 @@ export default class contact extends React.Component{
         return(
             <Layout title="Contact" headerText="Contact me!">
                 <div class="form-wrapper">
-                    <form class="form" name="contact" method="POST" data-netlify="true">    
+                    <form class="form" action="/contact/success" name="contact" method="POST" data-netlify="true">    
                             <div class="name-email-wrapper">                
                                 <div>
                                     <label for="name">Your Name: </label>
