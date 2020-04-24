@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from '../../components/Layout/Layout';
-import './css/contact.css'
+import '../css/contact.css'
 
 export default class contact extends React.Component{
 
