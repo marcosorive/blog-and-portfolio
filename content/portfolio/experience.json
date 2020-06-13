@@ -1,21 +1,34 @@
 [
     {
-        "title":"Inmobiliaria Raquel Vázquez",
-        "stack": "Python, Django, MySQL, Bootstrap.",
-        "description": "Web app for internal data managment. Working with a legacy DB.",
-        "image": "raquel",
-        "altImage": "Inmobiliaria raquel vazquez screenshot",
+        "title":"Adidas",
+        "stack": "Software developer",
+        "description": "Working on Content and product delivery. Node.js and React. June 2020 - Now.",
+        "image": "adidas",
+        "altImage": "Adidas logo",
         "buttons": [
             {
                 "text": "Visit",
-                "url": "https://www.inmobiliariaraquelvazquez.com"
+                "url": "https://adidas.com"
+            }
+        ]
+    },
+    {
+        "title":"HP SCDS",
+        "stack":"Software engineer.",
+        "description": "Developing software for large format printers. March 2019 - May 2020.",
+        "image": "hpscds",
+        "altImage": "HP SCDS screenshot.",
+        "buttons": [
+            {
+                "text": "Visit",
+                "url": "https://hpscds.com/ "
             }
         ]
     },
     {
         "title":"CSA",
         "stack": "Software developer",
-        "description": "Worked in a legacy ticketing system.",
+        "description": "Worked in a legacy ticketing system. Sept. 2018 - March 2019.",
         "image": "csa",
         "altImage": "CSA Screenshot",
         "buttons": [
@@ -26,15 +39,15 @@
         ]
     },
     {
-        "title":"HP SCDS",
-        "stack":"Software engineer.",
-        "description": "Developing software for large format printers.",
-        "image": "hpscds",
-        "altImage": "HP SCDS screenshot.",
+        "title":"Inmobiliaria Raquel Vázquez",
+        "stack": "Python, Django, MySQL, Bootstrap.",
+        "description": "Web app for internal data managment. Working with a legacy DB.",
+        "image": "raquel",
+        "altImage": "Inmobiliaria raquel vazquez screenshot",
         "buttons": [
             {
                 "text": "Visit",
-                "url": "https://hpscds.com/ "
+                "url": "https://www.inmobiliariaraquelvazquez.com"
             }
         ]
     }

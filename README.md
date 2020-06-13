@@ -1,5 +1,6 @@
-# WIP
+# Blog & Portfolio
 
-Hi! 
+Not so much to talk about: this is my blog & portfolio. The blog it's pretty empty since I don't write that much.
+Live at: https://marcos.orive.me 
 
-This is my new blog & portfolio. Made with gatsby and based on the gatsby starter paginated blog. 
+Made with Gatsby and deployed in Netlify.
