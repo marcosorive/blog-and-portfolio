@@ -30,15 +30,13 @@ export class Navbar extends React.Component{
                     })}
                 </div> 
             </nav>
-            <div className={`overlay-container${this.state.isMenuClosed ? "-hidden" : "-show"}`}>
-                <div style={{backgroundColor: this.props.backgroundColor}}>
-                    <div className="overlay-buttonClose" onClick={this.toggleMenu}><span>&times;</span></div>
-                    <div className="overlay-menu-wrapper">
-                        <div className="overlay-menu">
-                            {this.props.links.map((node) =>{
-                                return(<Link key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" style={{color: this.props.fontColor}}>{node.text}</Link>);
-                            })}
-                        </div>
+            <div className={`overlay-container${this.state.isMenuClosed ? "-hidden" : "-show"}`} style={{backgroundColor: this.props.backgroundColor}}>
+                <div className="overlay-buttonClose" onClick={this.toggleMenu}><span>&times;</span></div>
+                <div className="overlay-menu-wrapper">
+                    <div className="overlay-menu">
+                        {this.props.links.map((node) =>{
+                            return(<Link key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" style={{color: this.props.fontColor}}>{node.text}</Link>);
+                        })}
                     </div>
                 </div>
             </div>
