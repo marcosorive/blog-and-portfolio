@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: 'Marcos Orive',
+    author: 'Marcos Orive',
+    description:
+      'A blog and portfolio made. Made with Gatsby. Based on Gatsby paginated blog starter.',
+    siteUrl: 'https://marcos.orive.me',
+    social: {
+      twitter: `marcosorive`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,12 +30,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Marcos Orive: blog and portfolio.`,
+        short_name: `MarcosOrive`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#45b649`,
         display: `minimal-ui`,
+        icon: `images/icon.png`,
       },
     },
     {

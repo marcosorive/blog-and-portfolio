@@ -52,6 +52,7 @@ Navbar.defaultProps = {
     links:[
         {text: "Home", link:"/"},
         {text: "Portfolio", link:"/portfolio"},
-        {text: "Blog", link:"/blog"}
+        {text: "Blog", link:"/blog"},
+        {text: "Contact", link:"/contact"}
     ]
 }
