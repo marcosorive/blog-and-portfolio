@@ -8,7 +8,9 @@ class Layout extends React.Component {
     const { title, headerText ,children } = this.props
     return (
       <>
-      <Helmet>
+      <Helmet htmlAttributes={{
+        lang: 'en',
+      }}>
         <title>{`Marcos Orive - ${title}`}</title>
         <meta charset="UTF-8" />
         <meta name="description" content="Here you can read about my personal projects, blog and contact me!" />
