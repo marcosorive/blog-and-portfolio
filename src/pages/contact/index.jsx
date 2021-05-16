@@ -10,9 +10,9 @@ export default class contact extends React.Component{
                 <div class="form-wrapper">
                     <form class="form" action="/contact/success" name="contact" method="POST" data-netlify="true">    
                             <div class="name-email-wrapper">                
-                                <div>
+                                <div>                                                      
                                     <label for="name">Your Name: </label>
-                                    <input type="text" name="name" id="name" placeholder="John Doe" required/>                  
+                                    <input type="text" name="name" id="name" placeholder="John Doe" required/>
                                 </div>
                                 <div>
                                     <label>Your Email: </label>
