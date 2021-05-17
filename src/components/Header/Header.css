@@ -1,27 +1,26 @@
 header {
-    position: relative;
+    /* position: relative;
     height: 100px;
-    background-image: linear-gradient(#45b649, #dce35b);
-  }
+     background-image: linear-gradient(#45b649, #dce35b); */
+}
   
-  h1 {
-    font-size: 3em;
-    font-weight: 200;
-    text-align: center;
-  }
-  
-  header h1 {
-    color: white;
-    margin:0;
-  }
-  
-  svg {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    /* set height to pixels if you want angle to change with screen width */
-  }
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+}
+
+header h1 {
+  margin:0;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* set height to pixels if you want angle to change with screen width */
+}
 
 @media only screen and (min-width: 600px){
     header {

@@ -18,7 +18,6 @@ export default class Portfolio extends React.Component{
 		}
 		this.setProjectCardsContent = this.setProjectCardsContent.bind(this);
 		this.setExperiencieCardsContent = this.setExperiencieCardsContent.bind(this);
-		console.log(props.data)
 	}
 
 	componentDidMount(){
@@ -44,7 +43,7 @@ export default class Portfolio extends React.Component{
 	setProjectCardsContent(){
 		const cards = projectsContent.map(cardContent => {
 			return(
-				<Card key={cardContent.image}>
+				<Card key={cardContent.title}>
 					<CardImageHeader>
 						{ cardContent.image ?
 							<Img fluid={this.props.data[cardContent.image].childImageSharp.fluid} alt={cardContent.altImage}/> :
