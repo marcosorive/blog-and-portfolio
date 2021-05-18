@@ -36,6 +36,7 @@ nav{
 @media screen and (min-width: 600px) {
     .nav-links{
         width:25%;
+        font-size: 1.2em;
         display:flex;
         flex-direction: row;
         justify-content: flex-end;

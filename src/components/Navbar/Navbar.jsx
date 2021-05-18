@@ -1,48 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Navbar.css'
 import {Link} from 'gatsby';
 
-export class Navbar extends React.Component{
+export function Navbar (props){
 
-    constructor(props){
-        super(props)
-        this.state = {
-            isMenuClosed: true
-        }
-        this.toggleMenu = this.toggleMenu.bind(this);
+    const [isMenuClosed, setIsMenuClosed] = useState(true);
+
+    const toggleMenu = () => {
+        setIsMenuClosed(!isMenuClosed);
     }
 
-    toggleMenu(){
-        this.setState({
-            isMenuClosed : !this.state.isMenuClosed
-        })
-    }
-
-    render(){
-        return(
-            <div className="nav-container" style={{backgroundColor: this.props.backgroundColor, color: this.props.fontColor}}>
-            <nav>
-                <div className="nav-brand">{this.props.brand}</div>
-                <div className="nav-hamburguer-icon" onClick={this.toggleMenu}>☰</div>
-                <div className="nav-links">
-                    {this.props.links.map((node) =>{
-                        return(<Link key={node.text} to={node.link} style={{color: this.props.fontColor}}>{node.text}</Link>);
+    return(
+        <div className="nav-container" style={{backgroundColor: props.backgroundColor, color: props.fontColor}}>
+        <nav>
+            <div className="nav-brand">{props.brand}</div>
+            <div className="nav-hamburguer-icon" onClick={toggleMenu}>☰</div>
+            <div className="nav-links">
+                {props.links.map((node) =>{
+                    return(<Link key={node.text} to={node.link} style={{color: props.fontColor}}>{node.text}</Link>);
+                })}
+            </div> 
+        </nav>
+        <div className={`overlay-container${isMenuClosed ? "-hidden" : "-show"}`} style={{backgroundColor: props.backgroundColor}}>
+            <div className="overlay-buttonClose" onClick={toggleMenu}><span>&times;</span></div>
+            <div className="overlay-menu-wrapper">
+                <div className="overlay-menu">
+                    {props.links.map((node) =>{
+                        return(<Link key={node.text} to={node.link} onClick={toggleMenu} className="overlay-menu-item" style={{color: props.fontColor}}>{node.text}</Link>);
                     })}
-                </div> 
-            </nav>
-            <div className={`overlay-container${this.state.isMenuClosed ? "-hidden" : "-show"}`} style={{backgroundColor: this.props.backgroundColor}}>
-                <div className="overlay-buttonClose" onClick={this.toggleMenu}><span>&times;</span></div>
-                <div className="overlay-menu-wrapper">
-                    <div className="overlay-menu">
-                        {this.props.links.map((node) =>{
-                            return(<Link key={node.text} to={node.link} onClick={this.toggleMenu} className="overlay-menu-item" style={{color: this.props.fontColor}}>{node.text}</Link>);
-                        })}
-                    </div>
                 </div>
             </div>
         </div>
-        )
-    }
+    </div>
+    )
+    
 }
 
 Navbar.defaultProps = {
