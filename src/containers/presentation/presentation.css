@@ -1,0 +1,60 @@
+.presentation__wrapper{
+    min-height: 70vh
+}
+
+
+.presentation__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.presentation__main-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-cheer{
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 2vmin;
+    margin-bottom: 0.5em;
+}
+.presentation-description{
+    font-size: 1.8em;
+    font-weight: 200;
+    margin-bottom: 0.8em;
+}
+.presentation__main-image-container{
+    width: 40%;
+    height: auto;
+}
+
+.presentation__main-image{
+    height: 20rem;
+}
+
+.presentation-social-links{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-social-links button{
+    font-size: 1.2em;
+}
+@media screen and (min-width: 600px) {
+    .presentation-social-links{
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .presentation-text-container{
+        width: 60%;
+    }
+
+}
