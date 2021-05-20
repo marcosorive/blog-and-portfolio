@@ -1,0 +1,17 @@
+html, body, .tl-edges, .tl-wrapper, #___gatsby, #___gatsby>div{
+    margin:0;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: #C4F1BE;
+    background-color: rgb(239, 247, 238)
+}
+.index-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 1em;
+}
+

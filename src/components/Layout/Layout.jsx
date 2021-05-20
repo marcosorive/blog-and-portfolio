@@ -37,7 +37,7 @@ function Layout (props) {
       <meta name="author" content="Marcos Orive" />
     </Helmet>
     <div className="layout-wrapper">
-      <Navbar brand="Marcos Orive" backgroundColor="#dedede" fontColor="#000000" links={navBarLinks}/>
+      <Navbar brand="Hi, I'm Marcos!" backgroundColor="#dedede" fontColor="#000000" links={navBarLinks}/>
       {headerText ? <Header headerText={headerText}/> : <></>}
       {children}
     </div>

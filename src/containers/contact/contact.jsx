@@ -3,6 +3,8 @@ import './contact.css'
 
 export function Contact() {
     return(
+        <>
+        <h1>Do you want to talk?</h1>
         <div class="form-wrapper" id="contact">
         <form class="form" action="/contact/success" name="contact" method="POST" data-netlify="true">    
                 <div class="name-email-wrapper">                
@@ -22,5 +24,6 @@ export function Contact() {
                 <button type="submit">Send</button>            
         </form>
     </div>
+    </>
     )
 }

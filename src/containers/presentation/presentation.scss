@@ -1,0 +1,53 @@
+@import '../../styles/images.scss';
+
+
+.presentation{
+    &__wrapper{
+        min-height:90vh;
+        margin-top: 1em;
+    }
+    &__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    &__main-text{
+        display: flex;
+        flex-direction: column;
+    }
+    &__cheer{
+        font-size: 3em;
+        font-weight: 200;
+        margin-bottom: 2vmin;
+        margin-bottom: 0.5em;
+    }
+    &__description{
+        font-size: 1.8em;
+        font-weight: 200;
+        margin-bottom: 0.8em;
+    }
+    &__main-image{
+        height: $image_size_sm;
+        margin-top: 1em;
+    }
+    &__social-links{
+        margin-top: 2em;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .presentation{
+        &__social-links{
+            flex-direction: row;
+            flex-wrap:wrap;
+        }
+        .__text-container{
+            width: 60%;
+        }
+    }
+}

@@ -4,14 +4,14 @@ import { Projects } from '../containers/projects/projects'
 import { Contact } from '../containers/contact/contact'
 import { Presentation } from '../containers/presentation/presentation'
 import { About } from '../containers/about/about'
-import './css/index.css'
+import './index.css'
 export default function index(props) {
 
   return (
     <Layout title="Home">
       <div className="index-container">
 		<Presentation />
-        <Projects images={props.data  }/>
+        <Projects images={props.data} maxProjects={6}/>
 		<About />
 		<Contact />
       </div>
@@ -106,6 +106,13 @@ query{
 		}
 	}
 	adidas: file(relativePath: {eq:"adidas.jpg"}){
+		childImageSharp{
+			fluid(maxWidth: 1000){
+				...GatsbyImageSharpFluid
+			}
+		}
+	}
+	athos: file(relativePath: {eq:"athos.png"}){
 		childImageSharp{
 			fluid(maxWidth: 1000){
 				...GatsbyImageSharpFluid

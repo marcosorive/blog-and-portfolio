@@ -1,0 +1,17 @@
+.nav{
+    &__wrapper{
+        border-top: 5px black solid;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-top: 1em;
+    }
+    &__link{
+        margin-right: 1em;
+        color: black;
+        text-decoration: none;
+    }
+    &__link:last-child{
+        margin-right: 1.2em;
+    }
+}

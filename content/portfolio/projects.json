@@ -1,35 +1,5 @@
 [
     {
-        "title":"UBU ReactVR",
-        "stack": "Node.js with typescript, React, React Native, React360.",
-        "description": "My final degree project. Web, smartphone and VR/300 apps with a Node.js server. Manage and inspect 3D models in VR. Made in colaboration with <a href=\"https://hpscds.com/\" rel=\"noopener noreferrer\" target=\"_blank\">HP SCDS</a>.",
-        "image": "ubureactvr",
-        "altImage": "Ubu ReactVr",
-        "buttons": [
-            {
-                "url": "https://hpscds.com/observatorio_proyectos/reactvr/",
-                "text": "More info"
-            }
-        ]
-    },
-    {
-        "title":"Switch Calendar",
-        "stack": "Python, Django, MySQL, MDBootstrap.",
-        "description": "Web app to keep track the Nintendo Switch games releases. Users can register/log in and create their own calendar.",
-        "image": "nSwitch",
-        "altImage": "Nintendo switch calendar",
-        "buttons": [
-            {
-                "url": "https://github.com/marcosorive/switchcalendar",
-                "text": "Code"
-            },
-            {
-                "url": "https://switchcalendar.pythonanywhere.com",
-                "text": "Try it!"
-            }
-        ]
-    },
-    {
         "title":"Torky",
         "stack": "Python, Flask, ReactJS, Bootstrap.",
         "description": "Videogame price comparator for Spanish stores. Uses webscrapping and Amazon API.",
@@ -76,6 +46,49 @@
             },
             {
                 "url": "https://acdailytasks.herokuapp.com",
+                "text": "Try it!"
+            }
+        ]
+    },
+    {
+        "title":"Athos",
+        "stack": "Python, Telegram API.",
+        "description": "Telegram bot that notifies the user when the price of an item changes.",
+        "image": "athos",
+        "altImage": "Athos screenthos",
+        "buttons": [
+            {
+                "url": "https://gitlab.com/marcosorive/athos",
+                "text": "Code"
+            }
+        ]
+    },
+    {
+        "title":"UBU ReactVR",
+        "stack": "Node.js with typescript, React, React Native, React360.",
+        "description": "My final degree project. Web, smartphone and VR/300 apps with a Node.js server. Manage and inspect 3D models in VR. Made in colaboration with <a href=\"https://hpscds.com/\" rel=\"noopener noreferrer\" target=\"_blank\">HP SCDS</a>.",
+        "image": "ubureactvr",
+        "altImage": "Ubu ReactVr",
+        "buttons": [
+            {
+                "url": "https://hpscds.com/observatorio_proyectos/reactvr/",
+                "text": "More info"
+            }
+        ]
+    },
+    {
+        "title":"Switch Calendar",
+        "stack": "Python, Django, MySQL, MDBootstrap.",
+        "description": "Web app to keep track the Nintendo Switch games releases. Users can register/log in and create their own calendar.",
+        "image": "nSwitch",
+        "altImage": "Nintendo switch calendar",
+        "buttons": [
+            {
+                "url": "https://github.com/marcosorive/switchcalendar",
+                "text": "Code"
+            },
+            {
+                "url": "https://switchcalendar.pythonanywhere.com",
                 "text": "Try it!"
             }
         ]

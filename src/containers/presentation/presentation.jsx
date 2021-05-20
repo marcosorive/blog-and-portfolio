@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button } from '../../components/Button/Button';
 
-import './Presentation.css'
+import './Presentation.scss'
 
 export function Presentation() {
 
@@ -9,19 +8,19 @@ export function Presentation() {
     <div className="presentation__wrapper">
       <div className="presentation__main">
         <div className="presentation__main-text">
-          <div className="presentation-cheer">Hi, I'm Marcos!</div>
-          <div className="presentation-description">I'm a software engineer based in Spain</div>
-          <div className="presentation-description">Here you can check out some of my work, my blog posts and social links.</div>
+          <div className="presentation__cheer">Hi, I'm Marcos!</div>
+          <div className="presentation__description">I'm a software engineer based in Spain</div>
+          <div className="presentation__description">I focus on web technologies, agile delivery and collaboration.</div>
         </div>
         <div className="presentation__main-image-container">
-          <img src="freelance.svg" className="presentation__main-image"/>
+          <img src="freelance.svg" alt="Illustration of a software developer" className="presentation__main-image"/>
           </div>
       </div>
-      <div className="presentation-social-links">
-        <Button to="https://github.com/marcosorive">Github</Button>
-        <Button to="https://twitter.com/marcosorive">twitter</Button>
-        <Button to="https://linkedin.com/in/marcosorive">LinkedIn</Button>
-        <Button to="mailto:marcos@orive.me">Email</Button>
+      <div className="presentation__social-links">
+        <img className="icon" src="github.svg" alt="Github icon" height="32px" width="32px" />
+        <img className="icon" src="twitter.svg" alt="Twitter icon" height="32px" width="32px" />
+        <img className="icon" src="linkedin.svg" alt="LinkedIn icon" height="32px" width="32px" />
+        <img className="icon" src="email.svg" alt="LinkedIn icon" height="32px" width="32px" />
       </div>
     </div>
   )
