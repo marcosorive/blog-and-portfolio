@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Presentation.scss'
+import './presentation.scss'
 
 export function Presentation() {
 
