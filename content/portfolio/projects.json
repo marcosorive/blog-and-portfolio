@@ -14,7 +14,8 @@
                 "url": "https://marcosorive.github.io/torky/",
                 "text": "Try it!"
             }
-        ]
+        ],
+        "highlight": true
     },
     {
         "title":"Torky Native",
@@ -31,7 +32,8 @@
                 "url": "https://play.google.com/store/apps/details?id=me.orive.marcos.torkynative",
                 "text": "Google Play"
             }
-        ]
+        ],
+        "highlight": true
     },
     {
         "title":"Animal Crossin Daily Tasks",
@@ -48,7 +50,8 @@
                 "url": "https://acdailytasks.herokuapp.com",
                 "text": "Try it!"
             }
-        ]
+        ],
+        "highlight": true
     },
     {
         "title":"Athos",
@@ -61,7 +64,8 @@
                 "url": "https://gitlab.com/marcosorive/athos",
                 "text": "Code"
             }
-        ]
+        ],
+        "highlight": true
     },
     {
         "title":"UBU ReactVR",

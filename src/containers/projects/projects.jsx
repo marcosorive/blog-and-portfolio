@@ -1,19 +1,33 @@
 import React from 'react';
 import { Link } from "gatsby";
 import { Card, CardImageHeader, CardBody, CardFooter } from '../../components/Card/Card';
-import { Button } from '../../components/Button/Button';
+import { CardButton, Button } from '../../components/Button/Button';
 import Img from 'gatsby-image';
 import projectsContent from '../../../content/portfolio/projects.json';
 import './projects.css'
 
-export function Projects(props) {
-	const { images, maxProjects } = props;
-	const projectCards = projectsContent.map((cardContent, index) => {
-		if(index > parseInt(maxProjects)) return (<></>);
+export function Projects() {
+	const highlightProjects = projectsContent.filter(card => card.highlight);
+	const projectCards = buildProjectCards(highlightProjects, false);
+
+	return (
+		<section id="projects">
+			<h1>Projects I'm working on</h1>
+			<div className="card-layout">
+				{projectCards}
+			</div>
+			<Link to="/projects"><Button>More projects</Button></Link>
+		</section>
+	)
+
+}
+
+export const buildProjectCards = (cards, withImages = true, images = []) => {
+	return cards.map(cardContent => {
 		return (
 			<Card key={cardContent.title}>
 				<CardImageHeader>
-					{cardContent.image ?
+					{cardContent.image && withImages ?
 						<Img fluid={images[cardContent.image].childImageSharp.fluid} alt={cardContent.altImage} /> :
 						<></>
 					}
@@ -26,22 +40,11 @@ export function Projects(props) {
 				</CardBody>
 				<CardFooter>
 					{cardContent.buttons.map(button => {
-						return <Button key={button.text} to={button.url}>{button.text}</Button>
+						return <CardButton key={button.text} to={button.url}>{button.text}</CardButton>
 					})}
 				</CardFooter>
 			</Card>
 		)
-	})
-
-	return (
-		<section id="projects">
-			<h1>Projects I'm working on</h1>
-			<div className="card-layout">
-				{projectCards}
-			</div>
-			<Link to="/projects">More projects here!</Link>
-		</section>
-	)
-
+	});
 }
 

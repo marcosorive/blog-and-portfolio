@@ -1,6 +1,6 @@
 @import '../../styles/colors.scss';
 
-button{
+.card-button{
     border:none;
     cursor: pointer;
     margin:.5em;
@@ -11,6 +11,20 @@ button{
     transition: background-color 0.5s ease;
     font-size: 1em;
 }
-button:hover{
+
+.card-button:hover{
     background-color: #f0f0f0;
+}
+
+.button{
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.74);
+    border: none;
+    cursor: pointer;
+    margin: .5em;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    transition: background-color 0.5s ease;
+    font-size: 1em;
 }
