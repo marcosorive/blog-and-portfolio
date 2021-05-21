@@ -4,7 +4,7 @@ import { Card, CardImageHeader, CardBody, CardFooter } from '../../components/Ca
 import { CardButton, Button } from '../../components/Button/Button';
 import Img from 'gatsby-image';
 import projectsContent from '../../../content/portfolio/projects.json';
-import './projects.css'
+import './projects.scss'
 
 export function Projects() {
 	const highlightProjects = projectsContent.filter(card => card.highlight);
@@ -16,7 +16,9 @@ export function Projects() {
 			<div className="card-layout">
 				{projectCards}
 			</div>
-			<Link to="/projects"><Button>More projects</Button></Link>
+			<div className="projects__button-wrapper">
+				<Link to="/projects" className="projects__button">More projects</Link>
+			</div>
 		</section>
 	)
 
