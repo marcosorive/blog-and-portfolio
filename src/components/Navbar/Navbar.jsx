@@ -3,8 +3,12 @@ import {Link} from 'gatsby';
 
 import './Navbar.scss'
 
+const isBrowser = typeof window !== "undefined"
+
 export function Navbar (props){
-    console.log(window.location)
+    if(!isBrowser){
+        return <div>You need a browser</div>
+    }
     if(window.location.pathname === '/' || window.location.pathname === '' ){
         return(
             <nav className="nav__wrapper">
