@@ -1,5 +1,14 @@
-.layout{
-    &__content{
-        margin:1em;
+.allProjects {
+    &__wrapper {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__clarification {
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center;
     }
 }
