@@ -1,12 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
-import projectsContent from "../../content/portfolio/projects.json";
-import { buildProjectCards } from "../containers/projects/projects";
+import Layout from '../../components/Layout/Layout';
+import projectsContent from "../../../content/portfolio/projects.json";
+import { buildProjectCards } from "../../containers/projects/projects";
+
+import './allProjects.scss'
 
 export default function Projects(props){
     console.log(props.data)
-    return <Layout title="Projects">
-        <h1> All the projects I've worked on</h1>
+    return <Layout title="Projects" headerText="All the projects I've worked on" >
         <p>That includes the ones that I did as a beginner, abandoned ones, etc. Please take that into consideration.</p>
         {buildProjectCards(projectsContent, true, props.data)}
         </Layout>

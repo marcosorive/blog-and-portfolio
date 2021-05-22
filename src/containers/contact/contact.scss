@@ -10,20 +10,16 @@
     &__form-group{
         display: flex;
         flex-direction: column;
+        margin-bottom: 1em;
     }
     &__label{
-
+        margin-bottom: 1em;
     }
     &__input{
-
+        border: 1px solid green;
         padding: 12px;
         background-color: inherit;
         border-radius: 7px;
-    }
-    &__textarea{
-        margin-top: 8px;
-        border: 1px solid #999;
-        padding: 12px;
-        background-color: inherit;
+
     }
 }

@@ -3,6 +3,8 @@ import { Navbar } from "../Navbar/Navbar";
 import { Header } from '../Header/Header';
 import { Helmet } from "react-helmet";
 
+import './layout.scss'
+
 function Layout(props) {
   const { title, headerText, children } = props
   const navBarLinks = [
@@ -36,7 +38,9 @@ function Layout(props) {
       </Helmet>
       <Navbar brand="Hi, I'm Marcos!" backgroundColor="#dedede" fontColor="#000000" links={navBarLinks} />
       {headerText ? <Header headerText={headerText} /> : <></>}
-      {children}
+      <div className="layout__wrapper">
+        {children}
+      </div>
     </>
   )
 }

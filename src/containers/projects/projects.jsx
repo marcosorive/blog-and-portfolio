@@ -13,11 +13,11 @@ export function Projects() {
 	return (
 		<section id="projects">
 			<h1>Projects I'm working on</h1>
-			<div className="card-layout">
+			<div className="projects__card-container">
 				{projectCards}
 			</div>
 			<div className="projects__button-wrapper">
-				<Link to="/projects" className="projects__button">More projects</Link>
+				<Link to="/allProjects" className="projects__button">More projects</Link>
 			</div>
 		</section>
 	)
