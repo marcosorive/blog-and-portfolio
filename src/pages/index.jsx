@@ -14,6 +14,7 @@ export default function index() {
         <Projects />
         <About />
         <Contact />
+        <p>Made with Gatsby. Icons by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/freepik">Eucalyp</a></p>
       </div>
     </Layout>
   )

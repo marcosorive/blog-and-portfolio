@@ -17,10 +17,10 @@ export function Presentation() {
           </div>
       </div>
       <div className="presentation__social-links">
-        <a href="https://github.com/marcosorive"><img className="icon" src="github.svg" alt="Github icon" height="32px" width="32px" /></a>
-        <a href="https://twitter.com/marcosorive"><img className="icon" src="twitter.svg" alt="Twitter icon" height="32px" width="32px" /></a>
-        <a href="https://www.linkedin.com/in/marcosorive/"><img className="icon" src="linkedin.svg" alt="LinkedIn icon" height="32px" width="32px" /></a>
-        <a href="/#contact"><img className="icon" src="email.svg" alt="Email icon" height="32px" width="32px" /></a>
+        <a href="https://github.com/marcosorive"><img className="presentation__icon" src="github.svg" alt="Github icon" /></a>
+        <a href="https://twitter.com/marcosorive"><img className="presentation__icon" src="twitter.svg" alt="Twitter icon" /></a>
+        <a href="https://www.linkedin.com/in/marcosorive/"><img className="presentation__icon" src="linkedin.svg" alt="LinkedIn icon" /></a>
+        <a href="/#contact"><img className="presentation__icon" src="email.svg" alt="Email icon" /></a>
       </div>
     </div>
   )

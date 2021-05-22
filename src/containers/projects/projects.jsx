@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "gatsby";
 import { Card, CardImageHeader, CardBody, CardFooter } from '../../components/Card/Card';
-import { CardButton, Button } from '../../components/Button/Button';
+import { ExternalLinkButton, InternalLinkButton } from '../../components/Button/Button';
 import Img from 'gatsby-image';
 import projectsContent from '../../../content/portfolio/projects.json';
 import './projects.scss'
@@ -42,7 +42,7 @@ export const buildProjectCards = (cards, withImages = true, images = []) => {
 				</CardBody>
 				<CardFooter>
 					{cardContent.buttons.map(button => {
-						return <CardButton key={button.text} to={button.url}>{button.text}</CardButton>
+						return <ExternalLinkButton key={button.text} to={button.url}>{button.text}</ExternalLinkButton>
 					})}
 				</CardFooter>
 			</Card>

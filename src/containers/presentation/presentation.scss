@@ -3,8 +3,8 @@
 
 .presentation{
     &__wrapper{
-        min-height:90vh;
         margin-top: 1em;
+        margin-bottom: 2em;
     }
     &__main{
         display: flex;
@@ -35,19 +35,49 @@
     &__social-links{
         margin-top: 2em;
         display:flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+
+        *{ 
+            margin-right: 3em;
+        }
+        *:last-child{
+            margin-right: 0;
+        }
+    }
+    &__icon{
+        height: 32px;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .presentation{
-        &__social-links{
-            flex-direction: row;
-            flex-wrap:wrap;
+        &__wrapper{
+            max-width: 80% ;
         }
-        .__text-container{
-            width: 60%;
+        &__icon{
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .presentation{
+        &__main{
+            flex-direction: row;
+            margin-bottom: 5em;
+        }
+        &__main-text{
+            flex: 2;
+        }
+        &__main-image-container{
+            flex:1;
+        }
+        &__main-image{
+            height: $image_size_l;
+        }
+        &__icon{
+            height: 60px;
         }
     }
 }
